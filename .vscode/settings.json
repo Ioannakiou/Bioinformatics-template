@@ -1,0 +1,11 @@
+{
+    "cSpell.enabled": true,
+    "cSpell.words": ["adata", "fastq", "samtools"],
+
+
+
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {"file" : ".github/copilot-instructions.md"}
+    ]
+        
+}
