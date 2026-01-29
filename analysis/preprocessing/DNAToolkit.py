@@ -64,14 +64,14 @@ def translateDNAtoProtein(dna_seq, init_pos=0):
     """
     return [DNA_Codons[dna_seq[pos:pos+3]] for pos in range(init_pos, len(dna_seq) -2, 3)] 
 
-def codon_usage(dna_seq, aminoacid):
+def codon_usage(dna_seq, aminoacid):  # sourcery skip: for-append-to-extend, list-comprehension
     """Calculate the codon frequency for each amino acid in a DNA sequence.
 
     Args:
         dna_seq (str): The DNA sequence to analyze.
     """
     tmpList = []
-    for i in range(0, len(dna_seq) -2, 3):
+    for i in range(0, len(dna_seq) -2, 3): 
         if DNA_Codons[dna_seq[i:i+3]] == aminoacid:
             tmpList.append(dna_seq[i:i+3])
             
@@ -80,3 +80,30 @@ def codon_usage(dna_seq, aminoacid):
     for seq in freqDict:
         freqDict[seq] = round(freqDict[seq] / totalWight, 2)
     return freqDict
+
+def gen_reading_frames(seq):  # sourcery skip: merge-list-append, merge-list-appends-into-extend, merge-list-extend, unwrap-iterable-construction
+    frames = []
+    frames.append(translateDNAtoProtein(seq, 0))
+    frames.append(translateDNAtoProtein(seq, 1))
+    frames.append(translateDNAtoProtein(seq, 2))
+    frames.append(translateDNAtoProtein(reverseComplement(seq), 0))
+    frames.append(translateDNAtoProtein(reverseComplement(seq), 1))
+    frames.append(translateDNAtoProtein(reverseComplement(seq), 2))
+    return frames
+
+def proteins_from_rf(aa_seq):    # sourcery skip: for-index-underscore
+    """Compute all possible proteins from a reading frame amino acid sequence and return a list of proteins."""
+    current_protein = []
+    proteins = []
+    for aa in aa_seq:
+        if aa == '_': # Stop codon
+            if current_protein:
+                for p in current_protein:
+                    proteins.append(p)
+                current_protein = []
+        else:
+            if aa == 'M': # Start codon
+                current_protein.append("")
+            for i in range(len(current_protein)):
+                current_protein[i] += aa
+    return proteins

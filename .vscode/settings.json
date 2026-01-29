@@ -1,6 +1,15 @@
 {
     "cSpell.enabled": true,
-    "cSpell.words": ["adata", "fastq", "samtools", "FASTA", "subseq", "amminoacids"],
+    "cSpell.words": [
+        "adata",
+        "aminoacid",
+        "amminoacids",
+        "FASTA",
+        "fastq",
+        "samtools",
+        "sourcery",
+        "subseq"
+    ],
 
 
 
