@@ -4,8 +4,10 @@
         "adata",
         "aminoacid",
         "amminoacids",
+        "ATCG",
         "FASTA",
         "fastq",
+        "orfs",
         "samtools",
         "sourcery",
         "subseq"

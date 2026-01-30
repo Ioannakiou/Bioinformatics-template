@@ -1,28 +1,50 @@
-from DNAToolkit import *  # noqa: F403
-from utilities import colored
-import random
+# import DNAToolkit  as dt 
+# from utilities import colored
+# import random
+# from structures import NM_000207_3, Nucleotides
 
-#Create a random DNA sequenc
-randomDNAseq = ''.join([random.choice(Nucleotides) for _ in range(50)])  # noqa: F405
+# # Create a random DNA sequence
+# randomDNAseq = ''.join([random.choice(Nucleotides) for _ in range(50)])
 
-# print(validateSeq(randomDNAseq))  # noqa: F405
-# print(countNucFrequency(randomDNAseq))  # noqa: F405
-print(f'\nSequence: {colored(randomDNAseq)}\n')
-print(f'[1] + Sequence Length: {len(randomDNAseq)}')
-print(f'[2] + Nucleotide Frequency: {countNucFrequency(randomDNAseq)}\n')  # noqa: F405
-print(f'[3] + DNA/RNA Transcription RNA Sequence: {colored(transcribeDNAtoRNA(randomDNAseq))}\n')  # noqa: F405
-print(f"[4] + DNA string + Reverse Complement Sequence:\n5' {colored(randomDNAseq)} 3'")  # noqa: F405
-print(f'   {''.join(["|" for _ in range(len(randomDNAseq))])}')
-print(f"3  {colored(reverseComplement(randomDNAseq)[::-1])} 5' [Complement]") # noqa: F405
-print(f"5' {colored(reverseComplement(randomDNAseq))} 3' [Rev. Complement]\n")  # noqa: F405
+# DNAstr = dt.validateSeq(randomDNAseq)
 
-print(f'[5] + GC Content: {gc_content(randomDNAseq)}%\n')  # noqa: F405
-print(f'[6] + GC Content in Subsection k=5: {gc_content_subseq(randomDNAseq, k=5)}\n') # noqa: F405
-print(f'[7] + Protein Translation from DNA Sequence: {translateDNAtoProtein(randomDNAseq, 0)}\n')  # noqa: F405
-print(f'[8] + Codon frequency in Protein Translation: {codon_usage(randomDNAseq, "R")}\n')  # noqa: F405
-print(f'[9] + Reading frames:\n')  # noqa: F541
-for frame in gen_reading_frames(randomDNAseq):  # noqa: F405
-    print (frame)  
-test_rf_frame = ["L","M","T","A","L","V","V","L","V","R","R","G","S","_","G","H"]
+# print(validateSeq(randomDNAseq))
+# print(countNucFrequency(randomDNAseq))
+# print(f'\nSequence: {colored(randomDNAseq)}\n')
+# print(f'[1] + Sequence Length: {len(randomDNAseq)}')
+# print(f'[2] + Nucleotide Frequency: {dt.countNucFrequency(randomDNAseq)}\n')
+# print(f'[3] + DNA/RNA Transcription RNA Sequence: {colored(dt.transcribeDNAtoRNA(randomDNAseq))}\n') 
+# print(f"[4] + DNA string + Reverse Complement Sequence:\n5' {colored(randomDNAseq)} 3'")
+# print(f'   {''.join(["|" for _ in range(len(randomDNAseq))])}')
+# print(f"3  {colored(dt.reverseComplement(randomDNAseq)[::-1])} 5' [Complement]")
+# print(f"5' {colored(dt.reverseComplement(randomDNAseq))} 3' [Rev. Complement]\n")
 
-print(proteins_from_rf(test_rf_frame)) 
+# print(f'[5] + GC Content: {dt.gc_content(randomDNAseq)}%\n')
+# print(f'[6] + GC Content in Subsection k=5: {dt.gc_content_subseq(randomDNAseq, k=5)}\n')
+# print(f'[7] + Protein Translation from DNA Sequence: {dt.translateDNAtoProtein(randomDNAseq, 0)}\n')
+# print(f'[8] + Codon frequency in Protein Translation: {dt.codon_usage(randomDNAseq, "R")}\n')
+# print('[9] + Reading frames:\n')
+# for frame in dt.gen_reading_frames(randomDNAseq):
+#     print (frame)  
+# test_rf_frame = ["L","M","T","A","L","V","V","L","V","R","R","G","S","_","G","H"]
+
+# print(dt.proteins_from_rf(test_rf_frame)) 
+
+# print('\n[10] + Proteins from all 6 Reading Frames:\n')
+# for prot in dt.all_proteins_from_orfs(NM_000207_3, 0, 0, True): 
+#     print(f'{colored(prot)}')
+
+
+
+
+# The line `from bio_seq import bio_seq` is importing the `bio_seq` class from the `bio_seq` module.
+# This allows you to use the `bio_seq` class in your current Python script.
+from bio_seq import bio_seq
+
+
+test_DNA = bio_seq("ATCGGCTTTAGCTCAGCTAGCTAGCTAGCTA", "DNA", "Test Sequence")
+
+print(test_DNA.get_seq_info())
+
+test_DNA.generate_random_seq()
+print(test_DNA.get_seq_info())

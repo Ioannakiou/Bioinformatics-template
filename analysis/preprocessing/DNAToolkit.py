@@ -107,3 +107,28 @@ def proteins_from_rf(aa_seq):    # sourcery skip: for-index-underscore
             for i in range(len(current_protein)):
                 current_protein[i] += aa
     return proteins
+
+# Generate all RF
+# Extract all proteins
+# Return a list sorted/unsorted
+
+def all_proteins_from_orfs(seq, startReadPos=0, endReadPos=0, ordered=False):
+    # sourcery skip: assign-if-exp, for-append-to-extend, reintroduce-else, simplify-generator
+    """ Compute all possible proteins from all open reading frames"""
+    """Protein search DB: https://www.ncbi.nlm.nih.gov/nuccore/NM_001185097.2/"""
+    """ API can be used to fetch protein info"""
+    if endReadPos > startReadPos:
+        rfs = gen_reading_frames(seq[startReadPos:endReadPos])
+    else:
+        rfs = gen_reading_frames(seq)
+        
+    res = []
+    for rf in rfs:
+        proteins = proteins_from_rf(rf)
+        for p in proteins:
+            res.append(p)
+    if ordered:
+        return sorted(res, key=len, reverse=True)
+    return res
+
+
