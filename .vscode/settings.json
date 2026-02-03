@@ -8,6 +8,8 @@
         "bcolors",
         "FASTA",
         "fastq",
+        "kmer",
+        "mers",
         "orfs",
         "samtools",
         "sourcery",
