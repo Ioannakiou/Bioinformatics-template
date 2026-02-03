@@ -1,7 +1,7 @@
-CACGGCAUACUAGCUAGGUCCUAGUCUAUAACAAGAAUAUAAGAAGUAUGCCCGGCAGCGUUCAUUUGCGCGACCAGUAGCGUACUCUCCUCAGCGAUAG
-['H', 'G', 'I', 'L', 'A', 'R', 'S', '_', 'S', 'I', 'T', 'R', 'I', '_', 'E', 'V', 'C', 'P', 'A', 'A', 'F', 'I', 'C', 'A', 'T', 'S', 'S', 'V', 'L', 'S', 'S', 'A', 'I']
-['T', 'A', 'Y', '_', 'L', 'G', 'P', 'S', 'L', '_', 'Q', 'E', 'Y', 'K', 'K', 'Y', 'A', 'R', 'Q', 'R', 'S', 'F', 'A', 'R', 'P', 'V', 'A', 'Y', 'S', 'P', 'Q', 'R', '_']
-['R', 'H', 'T', 'S', '_', 'V', 'L', 'V', 'Y', 'N', 'K', 'N', 'I', 'R', 'S', 'M', 'P', 'G', 'S', 'V', 'H', 'L', 'R', 'D', 'Q', '_', 'R', 'T', 'L', 'L', 'S', 'D']
-['L', 'S', 'L', 'R', 'R', 'V', 'R', 'Y', 'W', 'S', 'R', 'K', '_', 'T', 'L', 'P', 'G', 'I', 'L', 'L', 'I', 'F', 'L', 'L', '_', 'T', 'R', 'T', '_', 'L', 'V', 'C', 'R']
-['Y', 'R', '_', 'G', 'E', 'Y', 'A', 'T', 'G', 'R', 'A', 'N', 'E', 'R', 'C', 'R', 'A', 'Y', 'F', 'L', 'Y', 'S', 'C', 'Y', 'R', 'L', 'G', 'P', 'S', '_', 'Y', 'A', 'V']
-['I', 'A', 'E', 'E', 'S', 'T', 'L', 'L', 'V', 'A', 'Q', 'M', 'N', 'A', 'A', 'G', 'H', 'T', 'S', 'Y', 'I', 'L', 'V', 'I', 'D', '_', 'D', 'L', 'A', 'S', 'M', 'P']
+ACCUUACACGACAUGAGUCUUAAAACACACCAAGUAGAAUGGCGCUUCGGCUCGUGAAUUUACUGUCCGUUGGUAUUAAUCUGGGAUGUAUACCAUGCAG
+['T', 'L', 'H', 'D', 'M', 'S', 'L', 'K', 'T', 'H', 'Q', 'V', 'E', 'W', 'R', 'F', 'G', 'S', '_', 'I', 'Y', 'C', 'P', 'L', 'V', 'L', 'I', 'W', 'D', 'V', 'Y', 'H', 'A']
+['P', 'Y', 'T', 'T', '_', 'V', 'L', 'K', 'H', 'T', 'K', '_', 'N', 'G', 'A', 'S', 'A', 'R', 'E', 'F', 'T', 'V', 'R', 'W', 'Y', '_', 'S', 'G', 'M', 'Y', 'T', 'M', 'Q']
+['L', 'T', 'R', 'H', 'E', 'S', '_', 'N', 'T', 'P', 'S', 'R', 'M', 'A', 'L', 'R', 'L', 'V', 'N', 'L', 'L', 'S', 'V', 'G', 'I', 'N', 'L', 'G', 'C', 'I', 'P', 'C']
+['L', 'H', 'G', 'I', 'H', 'P', 'R', 'L', 'I', 'P', 'T', 'D', 'S', 'K', 'F', 'T', 'S', 'R', 'S', 'A', 'I', 'L', 'L', 'G', 'V', 'F', '_', 'D', 'S', 'C', 'R', 'V', 'R']
+['C', 'M', 'V', 'Y', 'I', 'P', 'D', '_', 'Y', 'Q', 'R', 'T', 'V', 'N', 'S', 'R', 'A', 'E', 'A', 'P', 'F', 'Y', 'L', 'V', 'C', 'F', 'K', 'T', 'H', 'V', 'V', '_', 'G']
+['A', 'W', 'Y', 'T', 'S', 'Q', 'I', 'N', 'T', 'N', 'G', 'Q', '_', 'I', 'H', 'E', 'P', 'K', 'R', 'H', 'S', 'T', 'W', 'C', 'V', 'L', 'R', 'L', 'M', 'S', 'C', 'K']

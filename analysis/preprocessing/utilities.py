@@ -8,18 +8,15 @@ def colored(seq):
             'reset': "\033[0m"  # RESET COLOR
         }
         
-    tmpStr = ""
-     
-    for nucleotide in seq:
-        if nucleotide in bcolors:
-            tmpStr += bcolors[nucleotide] + nucleotide
-        else:
-            tmpStr += bcolors['reset'] + nucleotide
-    return tmpStr + '\033[0;0m'
+    result = "".join(
+        bcolors[nucleotide] + nucleotide if nucleotide in bcolors else bcolors['reset'] + nucleotide
+        for nucleotide in seq
+    )
+    return result + '\033[0;0m'
 
 def readTextFile(filePath):
     with open(filePath, 'r') as f:
-        return "".join([l.strip() for l in f.readlines()])
+        return "".join([l.strip() for l in f.readlines()])  # noqa: E741
     
 def writeTextFile(filePath, seq, mode='w'):
     with open(filePath, mode) as f:

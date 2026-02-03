@@ -1,5 +1,5 @@
 # import DNAToolkit  as dt 
-from utilities import colored
+# from utilities import colored
 # import random
 # from structures import NM_000207_3, Nucleotides
 

@@ -5,12 +5,14 @@
         "aminoacid",
         "amminoacids",
         "ATCG",
+        "bcolors",
         "FASTA",
         "fastq",
         "orfs",
         "samtools",
         "sourcery",
-        "subseq"
+        "subseq",
+        "tmpseq"
     ],
 
 

@@ -71,12 +71,12 @@ class bio_seq:
     def codon_usage(self, amino_acid):
         """Provides the codon frequency for a given amino acid in the DNA sequence."""
         tmpList = []
-        if self.seq_type == "DNA":
-            for i in range(0, len(self.seq) -2, 3):
+        for i in range(0, len(self.seq) -2, 3):
+            if self.seq_type == "DNA":
+            
                 if DNA_Codons[self.seq[i:i+3]] == amino_acid:
                     tmpList.append(self.seq[i:i+3])
-        elif self.seq_type == "RNA":
-            for i in range(0, len(self.seq) -2, 3):    
+            elif self.seq_type == "RNA":
                 if RNA_Codons[self.seq[i:i+3]] == amino_acid:
                     tmpList.append(self.seq[i:i+3])
         freqDict = dict(Counter(tmpList))
@@ -85,7 +85,7 @@ class bio_seq:
             freqDict[seq] = round(freqDict[seq] / totalWight, 2)
         return freqDict
         
-    def gen_reading_frames(self):  # sourcery skip: merge-list-append, merge-list-appends-into-extend, merge-list-extend, unwrap-iterable-construction
+    def gen_reading_frames(self):  # sourcery skip: extract-duplicate-method, merge-list-append, merge-list-appends-into-extend, merge-list-extend, unwrap-iterable-construction
         frames = []
         frames.append(self.translateDNAtoProtein(0))
         frames.append(self.translateDNAtoProtein(1))
