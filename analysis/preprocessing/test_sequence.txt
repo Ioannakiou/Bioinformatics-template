@@ -1,0 +1,7 @@
+CACGGCAUACUAGCUAGGUCCUAGUCUAUAACAAGAAUAUAAGAAGUAUGCCCGGCAGCGUUCAUUUGCGCGACCAGUAGCGUACUCUCCUCAGCGAUAG
+['H', 'G', 'I', 'L', 'A', 'R', 'S', '_', 'S', 'I', 'T', 'R', 'I', '_', 'E', 'V', 'C', 'P', 'A', 'A', 'F', 'I', 'C', 'A', 'T', 'S', 'S', 'V', 'L', 'S', 'S', 'A', 'I']
+['T', 'A', 'Y', '_', 'L', 'G', 'P', 'S', 'L', '_', 'Q', 'E', 'Y', 'K', 'K', 'Y', 'A', 'R', 'Q', 'R', 'S', 'F', 'A', 'R', 'P', 'V', 'A', 'Y', 'S', 'P', 'Q', 'R', '_']
+['R', 'H', 'T', 'S', '_', 'V', 'L', 'V', 'Y', 'N', 'K', 'N', 'I', 'R', 'S', 'M', 'P', 'G', 'S', 'V', 'H', 'L', 'R', 'D', 'Q', '_', 'R', 'T', 'L', 'L', 'S', 'D']
+['L', 'S', 'L', 'R', 'R', 'V', 'R', 'Y', 'W', 'S', 'R', 'K', '_', 'T', 'L', 'P', 'G', 'I', 'L', 'L', 'I', 'F', 'L', 'L', '_', 'T', 'R', 'T', '_', 'L', 'V', 'C', 'R']
+['Y', 'R', '_', 'G', 'E', 'Y', 'A', 'T', 'G', 'R', 'A', 'N', 'E', 'R', 'C', 'R', 'A', 'Y', 'F', 'L', 'Y', 'S', 'C', 'Y', 'R', 'L', 'G', 'P', 'S', '_', 'Y', 'A', 'V']
+['I', 'A', 'E', 'E', 'S', 'T', 'L', 'L', 'V', 'A', 'Q', 'M', 'N', 'A', 'A', 'G', 'H', 'T', 'S', 'Y', 'I', 'L', 'V', 'I', 'D', '_', 'D', 'L', 'A', 'S', 'M', 'P']
