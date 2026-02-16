@@ -188,13 +188,3 @@ This template includes VS Code settings (`.vscode/`) for a consistent developmen
 The scripts in this repository were produced as part of a bioinformatics course and are intended as a learning reference. They cover foundational bioinformatics programming concepts implemented from scratch in Python.
 
 ---
-
-## 📄 License
-
-This project is open source. Please add a `LICENSE` file to specify the terms under which others may use, modify, and distribute this template.
-
----
-
-## 📬 Contact
-
-Created by [@Ioannakiou](https://github.com/Ioannakiou) — feel free to open an issue with questions or suggestions.
